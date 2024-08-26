@@ -1,0 +1,127 @@
+:root{
+    --color-primario:#F3F5FC;
+    --color-secundario: #0A3871;
+    --color-terciario: #D8DFE8;
+
+    --fuente_inter: "Inter";
+    --color-hover: #8A6BF0;
+    --color-hover-menu: #007bff;
+}
+
+*{
+    background-color: var(--color-primario);
+    font-family: var(--fuente_inter);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.logo {
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 8%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+
+}
+
+.texto__base{
+    border: none;
+    color: var(--color-secundario);
+    text-transform: lowercase;
+    margin-top: 20px;
+    margin-left: 98px;
+}
+::placeholder{
+    color: var(--color-secundario);
+}
+.texto__base:focus{
+    outline: none;
+}
+
+.texto__resultado{
+    background-color: white;
+    background-image: url("./assets/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 32px;
+    color: var(--color-secundario);
+    margin-left: 98px;
+    padding-left: 20px;
+    position: absolute;
+    height: 650px;
+}
+
+.texto__resultado:focus{
+    outline: none;
+}
+
+.texto__resultado::placeholder{
+    font-size: 22px;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+    margin-left: 98px;
+}
+
+.boton__encriptar{
+    background-color: var(--color-secundario);
+    border: 1px solid var(--color-secundario);
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.boton__desencriptar{
+    background-color: var(--color-terciario);
+    border: 1px solid var(--color-secundario);
+    border-radius: 24px;
+    color: var(--color-secundario);
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    margin-left: 24px;
+}
+
+.boton__copiar{
+    background-color: white;
+    border: 1px solid var(--color-secundario);
+    border-radius: 24px;
+    color: var(--color-secundario);
+    cursor: pointer;
+    height: 67px;
+    width: 336px;
+    margin-left: 108px;
+    margin-top: 402px;
+    position: absolute;
+    top: 250px;
+
+}
+
+.informacion{
+    
+    color: #45565F;
+    font-size: 12px;
+    margin-left: 98px;
+    background-image: url(./assets/bi--exclamation-circle-fill.svg);
+    background-repeat: no-repeat;
+    padding-left: 4%;
+}
+
+footer{
+    color: var(--color-secundario);
+    text-align: center;
+    font-size: 20px;
+    padding: 0.5rem;
+
+}
+
