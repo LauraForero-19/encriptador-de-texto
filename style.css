@@ -43,28 +43,6 @@ main{
     outline: none;
 }
 
-.texto__resultado{
-    background-color: white;
-    background-image: url("./assets/Muñeco.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    border-radius: 32px;
-    color: var(--color-secundario);
-    margin-left: 98px;
-    padding-left: 20px;
-    position: absolute;
-    height: 650px;
-}
-
-.texto__resultado:focus{
-    outline: none;
-}
-
-.texto__resultado::placeholder{
-    font-size: 22px;
-}
-
 .botones{
     display: flex;
     margin-top: 18px;
@@ -92,6 +70,38 @@ main{
     margin-left: 24px;
 }
 
+.informacion{
+    
+    color: #45565F;
+    font-size: 12px;
+    margin-left: 98px;
+    background-image: url(./assets/bi--exclamation-circle-fill.svg);
+    background-repeat: no-repeat;
+    padding-left: 4%;
+}
+
+.texto__resultado{
+    background-color: white;
+    background-image: url("./assets/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 32px;
+    color: var(--color-secundario);
+    margin-left: 98px;
+    padding-left: 20px;
+    position: absolute;
+    height: 650px;
+}
+
+.texto__resultado:focus{
+    outline: none;
+}
+
+.texto__resultado::placeholder{
+    font-size: 22px;
+}
+
 .boton__copiar{
     background-color: white;
     border: 1px solid var(--color-secundario);
@@ -107,16 +117,6 @@ main{
 
 }
 
-.informacion{
-    
-    color: #45565F;
-    font-size: 12px;
-    margin-left: 98px;
-    background-image: url(./assets/bi--exclamation-circle-fill.svg);
-    background-repeat: no-repeat;
-    padding-left: 4%;
-}
-
 footer{
     color: var(--color-secundario);
     text-align: center;
@@ -124,4 +124,64 @@ footer{
     padding: 0.5rem;
 
 }
+
+@media (max-width: 1200px){
+
+    .logo {
+        width: 20%;
+        margin-top: 5%;
+        padding: 0%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5%;
+        margin-right: 0%;
+        gap: 40px;
+        width: auto;
+    }
+
+    .texto__base, .texto__resultado {
+        
+        position: relative;
+        width: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .informacion{
+        margin: 0%;
+        width: 100%;
+    }
+
+    .botones {
+        
+        align-items: center;
+        justify-content: left;
+        margin: 5%;
+        padding-right: 15%;
+        
+    }
+
+    .boton__copiar{
+        padding-right: 5%;
+        position: inherit;
+        margin-right: 30px;
+        margin-left: 6%;
+        margin-top: 0%;
+    }
+
+    footer{
+        margin: 5%;
+    }
+
+
+
+   
+
+
+}
+
 
